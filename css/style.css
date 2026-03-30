@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #111;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: black;
+}
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+.box {
+    background: #222;
+    padding: 20px;
+}
+.about {
+    padding: 50px;
+    text-align: center;
+}
+.services {
+    padding: 50px;
+    text-align: center;
+}
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.plans {
+    padding: 50px;
+    text-align: center;
+}
+
+.plan-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+}
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+form input, form textarea {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+form button {
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    color: white;
+}
+@media (max-width: 768px) {
+    .features, .service-box, .plan-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+nav a:hover {
+    color: red;
+}
